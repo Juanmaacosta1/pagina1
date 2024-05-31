@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(50, 50, 50);
+    color: white;
+    font-family: 'reboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    height: 75px;
+    background-color: rgb(129, 129, 44);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    height: 100%;
+    width: auto;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+header a:hover {
+    background-color: rgb(149, 121, 121);
+}
+
+header input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    transition: background-color 0.3s;
+    color: rgb(50, 50, 50);
+    font-size: 16px;
+}
+
+header input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#hero {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( 180deg,  rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(https://imgs.search.brave.com/SNGlvw7U_IR_HH-nv3o_Xz8u_Pvj8zak8TvV4n6bWww/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5sdjEyLmNvbS5h/ci9wLzk2YmE4MDc1/YjY0ZTJkZGYxNDVh/Yzg0YTYyYTU1Yjlk/L2FkanVudG9zLzI2/MS9pbWFnZW5lcy8w/MDAvNjc2LzAwMDA2/NzY2MjIvZXNwZWNp/ZXMucG5n);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+#hero h1 {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: color 0.3s;
+}
+
+#hero p {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 0 20px;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+#hero:hover h1,
+#hero:hover p {
+    color: #fff;
+    opacity: 1;
+}
+a{
+    color: grey;
+    text-decoration:none;
+}
+a:hover{
+color: brown;
+}
+#info img {
+    margin-top: 40px; 
+    border-radius: 40px;
+    float: left;
+}
+
+#info{
+    display: flex;
+    padding: 100px,5%;
+}
+#info div{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+#info img{
+    display: block;
+    border-radius: 20px;
+    min-height: 400px;
+    width: auto;
+    max-width: 50%; 
+    margin-top: 40px; 
+    margin-left: auto; 
+    margin-right: 20px; 
+}
+#hero h4{
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer p{
+    color: rgb(220, 20, 20);
+    text-align: center;
+}
